@@ -1,0 +1,13 @@
+{
+  "serverless": {
+    "provider": "aws",
+    "project": "pet-shop-client",
+    "skipInstall": false,
+    "directory": ".",
+    "clientProject": "pet-shop-client",
+    "serverless": {
+      "aws": {},
+      "gcloud": {}
+    }
+  }
+}
