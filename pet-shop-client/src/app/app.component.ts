@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
+import { OverlayContainer} from '@angular/cdk/overlay';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pet-shop-client';
+
+  @HostBinding('class') componentCssClass: any;
+
+  constructor(public overlayContainer: OverlayContainer){}
+
+
+
+  // Set Material Theme (Default, Dark, Ligth)
+  onSetTheme(theme) {
+    this.overlayContainer.getContainerElement().classList.add(theme);
+    this.componentCssClass = theme;
+  }
 }
