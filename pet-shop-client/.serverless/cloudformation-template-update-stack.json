@@ -103,7 +103,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/pet-shop-client/production/1578139675081-2020-01-04T12:07:55.081Z/pet-shop-client.zip"
+          "S3Key": "serverless/pet-shop-client/production/1578146602122-2020-01-04T14:03:22.122Z/pet-shop-client.zip"
         },
         "FunctionName": "pet-shop-client-production-api",
         "Handler": "lambda.universal",
@@ -122,14 +122,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "ApiLambdaVersionsByLSOSNeSUEvH0UXSBqRfeOm8smBWrXPMwPE2T1IKY": {
+    "ApiLambdaVersionfoBMHY6qexntHL1UFDB8CEEcfWLLVahwaAyli5ij5Ew": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ApiLambdaFunction"
         },
-        "CodeSha256": "4YFcYI3XSr0ivx0NAth5WzZQePBtlh0qbKBVdWlF/s4="
+        "CodeSha256": "2UTRegEfmE2Glzp/L52ri1GGWpJXbW7o8Q3/RAx/gbo="
       }
     },
     "ApiGatewayRestApi": {
@@ -247,7 +247,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1578139646734": {
+    "ApiGatewayDeployment1578146571987": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -317,7 +317,7 @@
     "ApiLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ApiLambdaVersionsByLSOSNeSUEvH0UXSBqRfeOm8smBWrXPMwPE2T1IKY"
+        "Ref": "ApiLambdaVersionfoBMHY6qexntHL1UFDB8CEEcfWLLVahwaAyli5ij5Ew"
       }
     },
     "ServiceEndpoint": {

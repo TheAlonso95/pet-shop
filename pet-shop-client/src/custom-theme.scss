@@ -3,21 +3,20 @@
 
 @include mat-core();
 
-$pet-shop-client-primary: mat-palette($mat-indigo);
-$pet-shop-client-accent: mat-palette($mat-pink, A200, A100, A400);
+$default-primary: mat-palette($mat-indigo);
+$default-accent: mat-palette($mat-pink, A200, A100, A400);
+
+$default-warn: mat-palette($mat-red);
+
+$default-theme: mat-light-theme($default-primary, $default-accent, $default-warn);
 
 
-$pet-shop-client-warn: mat-palette($mat-red);
 
-$pet-shop-client-theme: mat-light-theme($pet-shop-client-primary, $pet-shop-client-accent, $pet-shop-client-warn);
-
-
-
-@include angular-material-theme($pet-shop-client-theme);
+@include angular-material-theme($default-theme);
 
 
 // Dark theme
-$dark-primary: mat-palette($mat-blue-grey);
+$dark-primary: mat-palette($mat-grey, 900);
 $dark-accent:  mat-palette($mat-amber, A200, A100, A400);
 $dark-warn:    mat-palette($mat-deep-orange);
 
