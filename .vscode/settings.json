@@ -1,0 +1,7 @@
+{
+    "eslint.packageManager": "yarn",
+    "scss.lint.duplicateProperties": "warning",
+    "scss.lint.float": "warning",
+    "eslint.alwaysShowStatus": true,
+    "eslint.format.enable": true
+}
