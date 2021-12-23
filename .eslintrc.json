@@ -1,11 +1,17 @@
 {
   "root": true,
-  "ignorePatterns": ["projects/**/*"],
+  "ignorePatterns": [
+    "projects/**/*"
+  ],
   "overrides": [
     {
-      "files": ["*.ts"],
+      "files": [
+        "*.ts"
+      ],
       "parserOptions": {
-        "project": ["tsconfig.json"],
+        "project": [
+          "tsconfig.json"
+        ],
         "createDefaultProgram": true
       },
       "extends": [
@@ -15,16 +21,9 @@
         "plugin:prettier/recommended"
       ],
       "rules": {
-        "comma-dangle": ["error", "never"],
-        "sort-imports": [
+        "comma-dangle": [
           "error",
-          {
-            "ignoreCase": false,
-            "ignoreDeclarationSort": false,
-            "ignoreMemberSort": false,
-            "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
-            "allowSeparatedGroups": false
-          }
+          "never"
         ],
         "quotes": [
           1,
@@ -43,10 +42,10 @@
           }
         ],
         "no-empty-function": "off",
-        "@typescript-eslint/no-empty-function": ["error"],
-
+        "@typescript-eslint/no-empty-function": [
+          "error"
+        ],
         "@typescript-eslint/no-explicit-any": 2,
-
         "@typescript-eslint/unbound-method": [
           "error",
           {
@@ -72,11 +71,29 @@
       }
     },
     {
-      "files": ["*.html"],
-      "extends": ["plugin:@angular-eslint/template/recommended", "plugin:prettier/recommended"],
+      "files": [
+        "*.html"
+      ],
+      "extends": [
+        "plugin:@angular-eslint/template/recommended",
+        "plugin:prettier/recommended"
+      ],
       "rules": {
-        "prettier/prettier": ["error", { "parser": "angular" }]
+        "prettier/prettier": [
+          "error",
+          {
+            "parser": "angular"
+          }
+        ]
       }
+    },
+    {
+      "files": [
+        "*.ts"
+      ],
+      "extends": [
+        "plugin:ngrx/recommended"
+      ]
     }
   ]
 }

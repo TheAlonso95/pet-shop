@@ -5,6 +5,7 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { NbButtonModule, NbInputModule, NbLayoutModule, NbSidebarModule, NbThemeModule } from '@nebular/theme';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { StoreModule } from '@ngrx/store';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,7 +19,8 @@ import { AppComponent } from './app.component';
     NbLayoutModule,
     NbSidebarModule.forRoot(),
     NbButtonModule,
-    NbInputModule
+    NbInputModule,
+    StoreModule.forRoot({}, {})
   ],
   providers: [],
   bootstrap: [AppComponent]
