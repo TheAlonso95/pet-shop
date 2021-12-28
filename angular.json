@@ -4,7 +4,7 @@
   "cli": {
     "analytics": "e319358a-cd63-4603-94a3-752abf0b7d97",
     "packageManager": "yarn",
-    "defaultCollection": "@angular-eslint/schematics"
+    "defaultCollection": "@ngrx/schematics"
   },
   "newProjectRoot": "projects",
   "projects": {
